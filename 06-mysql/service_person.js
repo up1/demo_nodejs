@@ -4,7 +4,8 @@ var connection = mysql.createConnection(
         user: 'root',  
         password: '42112121', 
         database: 'demo_nodejs'
-    });
+    }
+);
 
 exports.all = function(req, res){
     if (connection) {
