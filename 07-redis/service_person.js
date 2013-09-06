@@ -2,7 +2,8 @@ var redis = require('redis');
 var connection = redis.createClient(
     {   host: 'localhost', 
         port: '6379'
-    });
+    }
+);
 
 exports.all = function(req, res){
     if (connection) {
